@@ -20,7 +20,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["finance-tracker-ui-iota.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
